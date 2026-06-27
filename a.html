@@ -1,0 +1,157 @@
+<!--
+1) Start the HTML document.
+   a) Use `<!DOCTYPE html>` to define the page as an HTML5 document.
+   b) Open the `<html>` tag.
+
+2) Create the head section.
+   a) Set the page title as "My Pet Page".
+   b) Add internal CSS using the `<style>` tag.
+
+3) Style the main page body.
+   a) Set the font family to Arial.
+   b) Add a light yellow background colour.
+   c) Add padding around the page.
+   d) Set a minimum height so the page can scroll.
+
+4) Style the headings.
+   a) Use `h1, h2` to target both headings.
+   b) Set the heading colour to dark orange.
+
+5) Create a fixed top bar.
+   a) Use `.top-bar` to target the top navigation bar.
+   b) Set `position: fixed` to keep it at the top.
+   c) Set `top`, `left`, and `right` to stretch it across the page.
+   d) Add background colour, text colour, and padding.
+
+6) Style the list items.
+   a) Use `.list-item` for pet information rows.
+   b) Add a white background.
+   c) Add a border, padding, and margin.
+
+7) Create a relative note.
+   a) Use `.special-note` to target the note.
+   b) Set `position: relative`.
+   c) Move it slightly to the right using `left`.
+   d) Add background colour and padding.
+
+8) Create the pet card.
+   a) Use `.pet-card` to target the card.
+   b) Set `position: relative`.
+   c) Add background colour, border, and padding.
+
+9) Add an absolute badge.
+   a) Use `.badge` to target the badge.
+   b) Set `position: absolute`.
+   c) Place it in the top-right corner of the pet card.
+   d) Add background colour, text colour, and padding.
+
+10) Create a sticky section label.
+   a) Use `.section-label` to target the label.
+   b) Set `position: sticky`.
+   c) Use `top` to decide where it sticks while scrolling.
+   d) Add background colour, text colour, padding, and margin.
+
+11) Add the page content.
+   a) Add the fixed top bar.
+   b) Add the main heading for Buddy.
+   c) Add sections for static, relative, absolute, and sticky positioning.
+   d) Add pet details and more available pets.
+
+12) Close the `<body>` and `<html>` tags to complete the webpage.
+-->
+  
+   }<!DOCTYPE html>
+<html>
+<head>
+  <title>My Pet Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: lightyellow;
+      padding: 65px 30px 30px 30px;
+      min-height: 1800px;
+    }
+    h1, h2 { color: darkorange; }
+
+    .top-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: darkorange;
+      color: white;
+      padding: 14px 20px;
+    }
+
+    .list-item {
+      background-color: white;
+      border: 2px solid darkorange;
+      padding: 10px 20px;
+      margin: 5px 0;
+    }
+
+    .special-note {
+      position: relative;
+      left: 30px;
+      background-color: gold;
+      padding: 10px 20px;
+    }
+
+    .pet-card {
+      position: relative;
+      background-color: white;
+      border: 3px solid darkorange;
+      padding: 15px 25px;
+    }
+
+    .badge {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      background-color: forestgreen;
+      color: white;
+      padding: 4px 8px;
+    }
+
+    .section-label {
+      position: sticky;
+      top: 55px;
+      background-color: darkorange;
+      color: white;
+      padding: 10px 20px;
+      margin: 15px 0 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">My Pet Page - Buddy the Labrador</div>
+  <h1>Meet Buddy!</h1>
+
+  <h2>Static</h2>
+  <div class="list-item">Breed: Labrador</div>
+  <div class="list-item">Age: 2 years old</div>
+
+  <h2>Relative</h2>
+  <p>This note shifts right from its normal spot.</p>
+  <div class="special-note">Pet of the Month!</div>
+
+  <h2>Absolute</h2>
+  <p>The badge is pinned to the corner of the card.</p>
+  <div class="pet-card">
+    <p>Buddy - Labrador, 2 years</p>
+    <div class="badge">Adopted!</div>
+  </div>
+
+  <h2>Sticky</h2>
+  <p>Scroll down - the label locks at the top!</p>
+  <div class="section-label">More Pets Available</div>
+  <div class="list-item">Luna - Poodle, 1 year</div>
+  <div class="list-item">Max - German Shepherd, 3 years</div>
+  <div class="list-item">Daisy - Beagle, 4 years</div>
+  <div class="list-item">Rocky - Golden Retriever, 2 years</div>
+  <div class="list-item">Bella - Border Collie, 1 year</div>
+  <div class="list-item">Charlie - Shih Tzu, 5 years</div>
+  <div class="list-item">Coco - Husky, 3 years</div>
+  <div class="list-item">Milo - Tabby Cat, 2 years</div>
+</body>
+</html>
